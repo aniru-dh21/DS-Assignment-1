@@ -1,6 +1,10 @@
 import java.rmi.registry.*;
 import java.util.*;
 
+/**
+ * Implementation of Java RMI Client
+ * Each method can be invoked by client
+ */
 public class CalculatorClient {
     public static void main(String[] args) {
         try {

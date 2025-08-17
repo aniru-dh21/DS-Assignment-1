@@ -1,5 +1,8 @@
 import java.rmi.registry.*;
 
+/**
+ * Implementation of Java RMI Server
+ */
 public class CalculatorServer {
     public static void main(String[] args) {
         try {
