@@ -41,6 +41,16 @@ public class CalculatorTest {
         calculator.pushValue(5);
         calculator.pushOperation("lcm");
         assertEquals(20, calculator.pop());
+
+        calculator.pushValue(10);
+        calculator.pushValue(20);
+        calculator.pushOperation("min");
+        assertEquals(10, calculator.pop());
+
+        calculator.pushValue(24);
+        calculator.pushValue(48);
+        calculator.pushOperation("max");
+        assertEquals(48, calculator.pop());
     }
 
     @Test
