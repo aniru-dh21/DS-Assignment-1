@@ -42,7 +42,7 @@ run_isolated_test() {
     return $?
 }
 
-# Test each method individually to avoid shared state issues
+# Tests each method individually to avoid shared state issues
 MULTI_CLIENT_PASSED=0
 MULTI_CLIENT_TOTAL=0
 
@@ -55,7 +55,6 @@ for i in {1..3}; do
     PIDS[$i]=$!
 done
 
-# Wait and collect results
 for i in {1..3}; do
     wait ${PIDS[$i]}
     if [ $? -eq 0 ]; then
